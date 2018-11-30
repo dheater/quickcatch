@@ -1,9 +1,12 @@
 # Getting started with unit testing C++ with Catch2
 
-Start by cloning this reposity
+Start by cloning this repository
 ```
 git clone git@gitlab.bit9.local:dheater/quickcatch.git
 ```
+
+## Dependencies
+- Conan: [Installation instructions](https://docs.conan.io/en/latest/installation.html)
 
 ## Building
 Run the following series of commands to build the application:
