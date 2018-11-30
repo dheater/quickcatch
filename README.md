@@ -6,7 +6,12 @@ git clone git@gitlab.bit9.local:dheater/quickcatch.git
 ```
 
 ## Dependencies
-- Conan: [Installation instructions](https://docs.conan.io/en/latest/installation.html)
+Conan: [Installation instructions](https://docs.conan.io/en/latest/installation.html)
+
+After installing Conan, run the following to install dependencies:
+```
+conan install -if .conan conanfile.txt
+```
 
 ## Building
 Run the following series of commands to build the application:
