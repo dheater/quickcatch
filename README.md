@@ -10,7 +10,6 @@ Run the following series of commands to build the application:
 ```
 mkdir build
 cd build
-conan install ..
 cmake ..
 make
 ```
