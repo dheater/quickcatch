@@ -1,6 +1,7 @@
-.conan
-.idea
+.idea/
 cmake-build-debug
 tags
 tags.lock
 *~
+*.swp
+build/
