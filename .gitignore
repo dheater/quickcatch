@@ -1,0 +1,6 @@
+.conan
+.idea
+cmake-build-debug
+tags
+tags.lock
+*~

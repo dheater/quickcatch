@@ -1,0 +1,47 @@
+---
+Language:        Cpp
+Standard:        Cpp11
+ConstructorInitializerIndentWidth: 4
+AlignTrailingComments: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: false
+BreakBeforeBinaryOperators: false
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializersBeforeComma: true
+BinPackParameters: true
+ColumnLimit:     80
+IndentCaseLabels: false
+IndentWrappedFunctionNames: false
+IndentFunctionDeclarationAfterType: false
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: true
+NamespaceIndentation: All
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 60
+PenaltyBreakString: 1000
+PenaltyBreakFirstLessLess: 120
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
+PointerBindsToType: false
+PointerAlignment: Right
+SpacesBeforeTrailingComments: 1
+IndentWidth:     4
+TabWidth:        4
+UseTab:          Never
+BreakBeforeBraces: Linux
+IndentFunctionDeclarationAfterType: false
+SpacesInParentheses: false
+SpacesInAngles:  false
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: true
+SpaceAfterControlStatementKeyword: false
+SpaceBeforeAssignmentOperators: true
+ContinuationIndentWidth: 4
+SpaceBeforeParens: Never
+...
+
