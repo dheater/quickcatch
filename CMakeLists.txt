@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 include(.conan/conanbuildinfo.cmake)
 conan_basic_setup()
 
-add_executable(quickcatch test.cpp)
+add_executable(quickcatch main.cpp test.cpp)
 target_link_libraries(quickcatch ${CONAN_LIBS})
