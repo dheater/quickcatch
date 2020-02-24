@@ -3,7 +3,7 @@ project(quickcatch)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include(.conan/conanbuildinfo.cmake)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
 add_executable(quickcatch main.cpp test.cpp)
