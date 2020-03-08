@@ -1,6 +1,7 @@
 .idea/
 .conan/
 cmake-build-debug
+cmake-build-release
 tags
 tags.lock
 *~
