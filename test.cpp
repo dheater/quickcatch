@@ -3,7 +3,7 @@
 
 TEST_CASE("Test stack operations")
 {
-    Nodes stack{};
+    Stack stack{};
 
     stack.Push(1);
     stack.Push(2);
@@ -16,9 +16,17 @@ TEST_CASE("Test stack operations")
 
 TEST_CASE("Test pop from just created stack throws")
 {
-    Nodes stack;
+    Stack stack;
 
     CHECK_THROWS(stack.Pop());
+}
+
+TEST_CASE("Test nodes left on stack - Use Valgrind")
+{
+    Stack stack{};
+
+    stack.Push(1);
+    stack.Push(2);
 }
 
 TEST_CASE("Test queue operations")
@@ -34,10 +42,17 @@ TEST_CASE("Test queue operations")
     CHECK_THROWS(3 == queue.Dequeue());
 }
 
-TEST_CASE("Test dequeu from just created queue throws")
+TEST_CASE("Test dequeue from just created queue throws")
 {
     Queue queue;
 
     CHECK_THROWS(queue.Dequeue());
 }
 
+TEST_CASE("Test nodes left on queue - Use Valgrind")
+{
+    Queue queue{};
+
+    queue.Enqueue(1);
+    queue.Enqueue(2);
+}

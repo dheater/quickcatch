@@ -9,7 +9,7 @@ namespace
     };
 } // namespace
 
-class Nodes
+class Stack
 {
     Node *head = nullptr;
 
@@ -32,6 +32,16 @@ class Nodes
         int value = n->value;
         delete n;
         return value;
+    }
+
+    ~Stack()
+    {
+        Node *n = head;
+        while(n) {
+            Node *t = n;
+            n = n->next;
+            delete t;
+        }
     }
 };
 
@@ -57,14 +67,22 @@ class Queue
 
     int Dequeue()
     {
-        if(!tail) {
-            throw 0;
-        }
+        if(!tail) { throw 0; }
         Node *n = tail;
         int rval = n->value;
         tail = n->prev;
 
         delete n;
         return rval;
+    }
+
+    ~Queue()
+    {
+        Node *n = tail;
+        while(n) {
+            Node *t = n;
+            n = n->prev;
+            delete t;
+        }
     }
 };
