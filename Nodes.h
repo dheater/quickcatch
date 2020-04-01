@@ -9,7 +9,7 @@ namespace
     };
 } // namespace
 
-class Stack
+class Nodes
 {
     Node *head = nullptr;
 

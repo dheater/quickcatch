@@ -1,9 +1,9 @@
-#include "Stack.h"
+#include "Nodes.h"
 #include <catch2/catch.hpp>
 
 TEST_CASE("Test stack operations")
 {
-    Stack stack{};
+    Nodes stack{};
 
     stack.Push(1);
     stack.Push(2);
@@ -16,7 +16,7 @@ TEST_CASE("Test stack operations")
 
 TEST_CASE("Test pop from just created stack throws")
 {
-    Stack stack;
+    Nodes stack;
 
     CHECK_THROWS(stack.Pop());
 }
